@@ -17,4 +17,6 @@ jobs:
         sudo apt-get install -yq cmake catch2
 
     - name: Build project
-      run: ./build/masuperlib-ctest
+      run: |
+        cmake build
+        ./build/masuperlib-ctest
